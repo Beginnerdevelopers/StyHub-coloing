@@ -1,0 +1,697 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("./images/banner.png");
+  background-position: center;
+  background-size: cover;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 7%;
+}
+.logo {
+  width: 14rem;
+  cursor: pointer;
+}
+.nav_links li {
+  list-style: none;
+  display: inline-block;
+  margin: 1rem 3rem;
+  font-size: 1.4rem;
+}
+.nav_links li a {
+  text-decoration: none;
+  color: #fff;
+}
+.register_btn {
+  background: #fff;
+  color: #000;
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+.container {
+  padding: 0 7%;
+}
+.header h1 {
+  font-size: 4vw;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  padding-top: 22%;
+}
+.search_bar {
+  background: #fff;
+  width: 70%;
+  margin: 3rem auto;
+  padding: 0.6rem 1rem 0.6rem 3rem;
+  border-radius: 5rem;
+}
+
+.search_bar form {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.search_bar form input {
+  display: block;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+.search_bar form button {
+  background: #ff5361;
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+.search_bar form button img {
+  width: 1.5rem;
+  margin-top: 0.7rem;
+}
+.Location_input {
+  flex: 1;
+}
+.search_bar form button label {
+  font-weight: 600;
+}
+/* -------------------------exclusive -------------------  */
+.sub_title {
+  margin: 5rem 0 2rem;
+  font-size: 2.2vw;
+  font-weight: 500;
+  color: #333;
+}
+.exclusive {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 3rem;
+}
+.exclusive div img {
+  width: 100%;
+  border-radius: 1rem;
+}
+.exclusive div {
+  position: relative;
+}
+.exclusive div span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+/* ---------------tranding Place ---------------  */
+.tranding {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 3rem;
+  margin-bottom: 3rem;
+}
+.tranding div img {
+  width: 100%;
+  border-radius: 1rem;
+}
+.tranding h3 {
+  font-weight: 600;
+  margin-top: 1rem;
+}
+/* ----------------------call to action ----------------  */
+.cta {
+  margin: 8rem 0rem;
+  background-image: linear-gradient(to right, #3f2331, transparent),
+    url("images/banner-2.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 1rem;
+  padding: 5%;
+  color: #3fff;
+}
+.cta h3 {
+  font-size: 4vw;
+  line-height: 5.3w;
+  font-weight: 500;
+}
+.cta p {
+  font-size: 1.8rem;
+  margin: 1rem 0rem;
+}
+.cta_btn {
+  background: #ff5361;
+  color: #fff;
+  text-decoration: none;
+  padding: 1.2rem 3rem;
+  border-radius: 0.8rem;
+  margin-top: 2rem;
+  display: inline-block;
+  font-size: 1.5rem;
+}
+/* --------------------stories --------------  */
+.stories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 3rem;
+  margin-bottom: 3rem;
+}
+.stories div img {
+  width: 100%;
+  border-radius: 10px;
+}
+.stories div {
+  position: relative;
+  text-align: center;
+}
+
+.stories p {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 2.6rem;
+}
+.start_btn {
+  text-decoration: none;
+  background: #ff5361;
+  color: #fff;
+  width: 80%;
+  display: block;
+  max-width: 35rem;
+
+  text-align: center;
+  margin: 6rem auto;
+  padding: 1.5rem;
+  border-radius: 3rem;
+  font-size: 2rem;
+}
+/* --------------------about msg -----------------  */
+.about_msg {
+  text-align: center;
+  margin: 8rem 0rem;
+  color: #333;
+  font-size: 1.7rem;
+}
+.about_msg h2 {
+  font-size: 2.8rem;
+  margin-bottom: 3rem;
+  font-weight: 500;
+}
+/* ----------------foter -------------  */
+.footer {
+  margin: 8rem 0rem 1rem;
+  text-align: center;
+}
+.footer a {
+  text-decoration: none;
+  color: #999;
+  font-size: 2.2rem;
+  margin: 0rem 1rem;
+}
+.footer hr {
+  background: #999;
+  height: 0.1rem;
+  width: 100%;
+  border: 0;
+  margin: 2rem 0rem;
+}
+.footer p {
+  padding: 1.5rem;
+}
+nav .fa-bars {
+  display: none;
+}
+/* -----------------active class ----------------  */
+.active {
+  position: relative;
+}
+.active::after {
+  content: "";
+  background: #fff;
+  width: 2.5rem;
+  height: 0.2rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -1.2rem;
+  border-radius: 0.2rem;
+}
+@media only screen and (max-width: 700px) {
+  .logo {
+    position: fixed;
+    top: 4%;
+    left: 7%;
+  }
+  nav {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    display: inline-block;
+    width: 100%;
+    padding: 10rem 7% 0;
+    background-color: black;
+    text-align: right;
+    max-height: 10rem;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+  nav .nav_links li {
+    margin: 1rem 0rem;
+    display: block;
+  }
+  .register_btn {
+    margin: 1.5rem 0rem 3rem;
+    display: inline-block;
+  }
+  nav .fa-bars {
+    display: block;
+    position: fixed;
+    top: 4%;
+    right: 7%;
+    color: #fff;
+    font-size: 2.8rem;
+  }
+  .active::after {
+    left: -4rem;
+    transform: translate(0, 50%);
+    bottom: 50%;
+  }
+  .hidemenu {
+    max-height: 300px;
+  }
+  .header h1 {
+    padding-top: 20rem;
+    font-size: 7vw;
+  }
+  .search_bar {
+    width: 90%;
+    margin: 3rem auto;
+    padding: 2rem 1rem 3rem;
+    border-radius: 5px;
+    position: relative;
+  }
+  .search_bar form {
+    display: block;
+  }
+  .search_bar form input {
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .search_bar form button {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+  .sub_title {
+    font-size: 6vw;
+  }
+  .cta {
+    padding: 15% 5%;
+  }
+  .cta h3 {
+    font-size: 7vw;
+    line-height: 8vw;
+  }
+  .cta p {
+    font-size: 1.4rem;
+  }
+  .cta_btn {
+    padding: 0.6rem 1.5rem;
+    border-radius: 6px;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+  }
+  .stories p {
+    font-size: 2.2rem;
+  }
+  .about_msg {
+    font-size: 1.5rem;
+  }
+}
+/* ===================================================== */
+/* ----------------------Listing page ---------------------  */
+/* ========================================================== */
+.navbar_white {
+  background: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+.navbar_white .nav_links li a {
+  color: #000;
+}
+.navbar_white .register_btn {
+  color: #fff;
+  background: #ff5361;
+}
+nav .navbar_white .fa-bars {
+  color: #000;
+}
+.navbar_white .active::after {
+  background: #ff5361;
+}
+/* -----------------list --------- */
+.list_container {
+  display: flex;
+  margin-top: 5rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.left_col {
+  flex-basis: 70%;
+}
+.left_col h1 {
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+.right_col {
+  flex-basis: 25%;
+}
+.house {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 3rem 0rem;
+  border-top: 0.1rem solid #ccc;
+}
+.house_img {
+  flex-basis: 40%;
+}
+.house_info {
+  flex-basis: 58%;
+  color: #555;
+}
+.house_info h3 {
+  font-weight: 600;
+  color: #333;
+  font-size: 2.2rem;
+  margin: 0.4rem 0rem;
+}
+.house_info i {
+  color: #ff5361;
+  font-size: 1.8rem;
+  margin: 1rem 0.1rem;
+}
+.house_img img {
+  width: 100%;
+  border-radius: 1.2rem;
+}
+.house_price {
+  text-align: right;
+}
+.house_price h4 {
+  font-size: 4rem;
+}
+.house_price h4 span {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+/* -----------------------------side bar -----------  */
+.side_bar {
+  border: 0.1rem solid #999;
+  padding: 2rem 3rem;
+  margin-top: 3rem;
+}
+
+.side_bar h2 {
+  font-weight: 500;
+}
+.side_bar h3 {
+  font-weight: 500;
+  margin: 2rem 0rem 1rem;
+}
+.filter {
+  display: flex;
+  align-items: center;
+  color: #555;
+  margin-bottom: 1rem;
+}
+.filter p {
+  flex: 1;
+}
+.filter input {
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+.side_bar_link {
+  text-align: right;
+  margin: 2rem 0rem;
+}
+.side_bar_link a {
+  text-decoration: none;
+}
+/* ----------------------pagination-------------  */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem 0rem;
+}
+.pagination img {
+  width: 1.5rem;
+  margin: 1rem 2rem;
+}
+.right_arrow {
+  transform: rotate(180deg);
+}
+.pagination span {
+  margin: 1rem 0.8rem;
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.pagination .current {
+  background: #333;
+  color: #fff;
+}
+/* media quarry --------------------------------  */
+@media only screen and(max-width:700px) {
+  .list_container {
+    margin-top: 15rem;
+  }
+  .left_col,
+  .right_col,
+  .house_img,
+  .house_info {
+    flex-basis: 100%;
+  }
+  .left_col h1 {
+    font-size: 2.2rem;
+  }
+  .house_info h3 {
+    font-size: 1.8rem;
+  }
+  .house_info i {
+    font-size: 1.6rem;
+  }
+  .pagination span {
+    margin: 1rem 0.2rem;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1.2rem;
+  }
+}
+/* -----------------house detail --------------  */
+.house_details {
+  padding: 0 12%;
+}
+.house_title {
+  margin-top: 5rem;
+}
+.house_title h1 {
+  font-weight: 600;
+}
+.house_title .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 1rem 0rem;
+}
+.house_title span {
+  margin: 0rem 2rem;
+}
+.house_title i {
+  color: #ff5361;
+  font-size: 1.4rem;
+}
+.gallary {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-areas: "first first .." "first first ..";
+  margin: 2rem 0rem;
+}
+.gallary div img {
+  width: 100%;
+  display: block;
+  border-radius: 1rem;
+}
+.gallery_img_one {
+  grid-area: first;
+}
+.small_detail h2 {
+  font-weight: 500;
+}
+.small_detail h4 {
+  text-align: right;
+  font-size: 2.2rem;
+}
+.line {
+  border: 0;
+  height: 1;
+  background: #ccc;
+  width: 100%;
+  max-width: 80rem;
+  margin: 2rem 0rem 5rem;
+}
+.check_form {
+  margin: 3rem 0rem;
+  background: #fff;
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.3);
+  border-radius: 0.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1rem 5rem;
+}
+.check_form label {
+  display: block;
+}
+.check_form form {
+  padding: 2rem;
+}
+.check_form input {
+  background: transparent;
+  border: 0;
+  outline: none;
+}
+.check_form button {
+  background: #ff5361;
+  border: 0;
+  outline: none;
+  color: #fff;
+  padding: 1.8rem;
+  width: 35rem;
+  border-radius: 0.8rem;
+  font-size: 2rem;
+}
+.guest_feild {
+  flex: 1;
+}
+.deatils_list {
+  list-style: none;
+  margin: 5rem 0rem;
+}
+.deatils_list li {
+  margin-left: 5rem;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  color: #555;
+  position: relative;
+}
+
+.deatils_list li span {
+  display: block;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+.deatils_list li i {
+  position: absolute;
+  top: 0.5rem;
+  left: -4rem;
+}
+.home_desc {
+  max-width: 70rem;
+  margin-bottom: 5rem;
+  font-size: 20px;
+}
+.host {
+  display: flex;
+  align-items: center;
+}
+.host img {
+  width: 8rem;
+  border-radius: 50%;
+  margin-left: 3rem;
+}
+.host h2 {
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+.host i {
+  color: #ff5361;
+}
+.contact_Host {
+  display: inline-block;
+  margin: 4rem 0rem 4rem 12rem;
+  text-decoration: none;
+  color: #555;
+  padding: 1.5rem 5rem;
+  border: 1px solid #ff5361;
+  font-size: 2rem;
+}
+@media only screen and (max-width: 700px) {
+  .house_details {
+    margin-top: 15rem;
+  }
+  .row p {
+    margin-top: 1rem;
+  }
+  .gallary {
+    grid-template-areas: "first first " ".." "..";
+  }
+  .small_detail h2 {
+    font-size: 2rem;
+    margin-top: 2.4rem;
+  }
+  .small_detail h4 {
+    text-align: left;
+    margin: 1rem 0rem;
+    font-size: 1.8rem;
+  }
+  .check_form {
+    padding: 1rem 3rem;
+  }
+  .check_form div {
+    padding: 2rem 0rem;
+    width: 100%;
+    padding-bottom: 0.5rem;
+  }
+  .check_form button {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .host {
+    display: block;
+    line-height: 2.8rem;
+  }
+  .contact_Host {
+    margin: 4rem 0rem;
+  }
+}

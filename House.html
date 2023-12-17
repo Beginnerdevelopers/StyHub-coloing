@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>House Detail</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navBar navbar_white">
+      <a href="index.html">
+        <img src="./images/logo-red.png" alt="" class="logo"
+      /></a>
+      <ul class="nav_links">
+        <li><a href="" class="active">Popular Places</a></li>
+        <li><a href="">Travkes Outside</a></li>
+        <li><a href="listing.html">Online Packages</a></li>
+      </ul>
+      <a href="" class="register_btn">Register Now</a>
+      <i class="fa fa-bars" onclick="togalebtn()"></i>
+    </nav>
+    <div class="house_details">
+      <div class="house_title">
+        <h1>Wamge House</h1>
+        <div class="row">
+          <div>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half"></i>
+            <span>300 review</span>
+          </div>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Eligendi, dolorem.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallary">
+        <div class="gallery_img_one">
+          <img src="images/house-1.png" alt="" />
+        </div>
+        <div><img src="images/house-2.png" alt="" /></div>
+        <div><img src="images/house-3.png" alt="" /></div>
+        <div><img src="images/house-4.png" alt="" /></div>
+        <div><img src="images/house-5.png" alt="" /></div>
+      </div>
+      <div class="small_detail">
+        <h2>Lorem ipsum, Praesentium, tempore?</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,
+          tempore.
+        </p>
+        <h4>$100 /day</h4>
+      </div>
+      <hr class="line" />
+      <form class="check_form">
+        <div>
+          <label for="">Chack In</label>
+
+          <input type="text" placeholder="Add Date" />
+        </div>
+        <div>
+          <label for="">Chack Out</label>
+
+          <input type="text" placeholder="Add Date" />
+        </div>
+        <div class="guest_feild">
+          <label for="">Guest</label>
+
+          <input type="text" placeholder="2 Guest" />
+        </div>
+
+        <button type="submit">Check Availbility</button>
+      </form>
+      <ul class="deatils_list">
+        <li>
+          <i class="fa fa-home"></i> Entire Home
+          <span>You will have to Entire flat for you</span>
+        </li>
+        <li>
+          <i class="fa fa-paint-brush"></i> Enhanced Clean
+          <span>This host is commited to stayhub cleaing</span>
+        </li>
+        <li>
+          <i class="fa fa-map-marker" aria-hidden="true"></i> Great Location
+          <span>90% guest give the 5 star rating</span>
+        </li>
+        <li>
+          <i class="fa fa-heart" aria-hidden="true"></i>
+          Great Chack in Experience
+          <span>Every previous geust have a great experience </span>
+        </li>
+      </ul>
+      <hr class="line" />
+      <p class="home_desc">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit placeat
+        aperiam, temporibus eius impedit unde eaque nemo doloremque sit
+        deleniti.
+      </p>
+
+      <div class="host">
+        <img src="images/host.png" alt="" />
+        <div>
+          <h2>Usman</h2>
+          <p>
+            <span>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half"></i> </span
+            >&nbsp;&nbsp; 300 reviews &nbsp;&nbsp;respone
+            100%&nbsp;&nbsp;Response time 60min
+          </p>
+        </div>
+      </div>
+
+      <a href="" class="contact_Host">Contect Host</a>
+    </div>
+    <!-- ---------------footer -----------  -->
+    <div class="footer">
+      <a href="https://facebook.com"> <i class="fa fa-facebook-f"></i></a>
+      <a href="https://youtube.com"> <i class="fa fa-youtube"></i></a>
+      <a href="https://twitter.com"> <i class="fa fa-twitter"></i></a>
+      <a href="https://linkedin.com"> <i class="fa fa-linkedin"></i></a>
+      <a href="https://instagram.com"> <i class="fa fa-instagram"></i></a>
+
+      <hr />
+      <p>Copyright @ 2023</p>
+    </div>
+  </body>
+  <script>
+    nabBar = document.getElementById("navBar");
+    function togalebtn() {
+      navBar.classList.toggle("hidemenu");
+    }
+  </script>
+</html>
